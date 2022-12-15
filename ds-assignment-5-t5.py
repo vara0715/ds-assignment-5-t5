@@ -22,10 +22,10 @@ class SavingsAccount(Account):
         return (self.balance * self.interestRate / 100 ) 
         
 
-obj = SavingsAccount("Pratham",1000,5)
-print("Initial Balance : ",obj.getBalance())
-obj.withdrawal(500)
-print("Balance after withdrawal : ",obj.getBalance())
-obj.deposit(1500)
-print("After deposit : ",obj.getBalance())
-print("Intrest on current balance : ",obj.interestAmount())
+sbi = SavingsAccount("Pratham",1000,5)
+print("Initial Balance : ",sbi.getBalance())
+sbi.withdrawal(500)
+print("Balance after withdrawal : ",sbi.getBalance())
+sbi.deposit(1500)
+print("After deposit : ",sbi.getBalance())
+print("Intrest on current balance : ",sbi.interestAmount())
